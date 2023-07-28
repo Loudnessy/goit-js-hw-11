@@ -12,9 +12,9 @@ button.addEventListener("click", onClick)
 let searchValue
 function onSubmit (evt) {
     evt.preventDefault()
+    page = 1
     searchValue = evt.currentTarget.firstElementChild.value
     getImages(searchValue)
-    page = 1
     button.setAttribute("hidden", true)
 }
 
